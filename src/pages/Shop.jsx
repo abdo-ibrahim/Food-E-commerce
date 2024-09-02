@@ -4,6 +4,7 @@ import HeaderLine from "../components/Tittles/HeaderLine";
 import ShowProducts from "../components/Categories/ShowProducts";
 import Categories from "../components/Categories/Categories";
 import products from "../api/Data";
+import toast, { Toaster } from "react-hot-toast";
 
 const Shop = () => {
   const [curCat, setCurCat] = useState("burger");
@@ -14,6 +15,9 @@ const Shop = () => {
 
   return (
     <div className="shop p-4 relative">
+      <div>
+        <Toaster position="top-center" reverseOrder={false} />
+      </div>
       <Crumb />
       <HeaderLine heading={"Shop by category"} desc={"Shop by category"} />
       <div className="container">
