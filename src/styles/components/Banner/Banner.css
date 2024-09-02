@@ -1,0 +1,28 @@
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  @apply center-flex;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.79) 0%,
+      rgba(0, 0, 0, 0.79) 10%
+    ),
+    url("../../../assets/imgs/burger.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner .info {
+  @apply sm:w-full md:w-[1100px];
+  padding: 15px;
+}
+.banner .info h1 {
+  @apply sm:text-[50px] md:text-[96px];
+  line-height: 1.2;
+}
+.banner .info p {
+  @apply sm:w-full md:w-[70%];
+  margin: 20px auto 50px;
+}

@@ -1,0 +1,3 @@
+.cart-item {
+  @apply h-[145px]  max-w-full md:w-[680px] flex items-center gap-4;
+}

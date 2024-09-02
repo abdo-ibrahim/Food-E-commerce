@@ -1,0 +1,30 @@
+.card-details {
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+.card-details .new {
+  z-index: 99;
+  background-color: #d62828;
+  border-radius: 6px;
+  padding: 8px 20px;
+  width: fit-content;
+  position: absolute;
+  top: 0px;
+  right: 35px;
+}
+.card-details .favorite,
+.card-details .close {
+  @apply flex items-center justify-center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.3s all ease-in-out;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 10;
+}
+.card-details .closeP {
+  top: 15px;
+  left: 15px;
+}

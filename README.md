@@ -1,2 +1,5 @@
-# Food-E-commerce
-Html, CSS, React JS, Tailwind CSS and Redux Toolkit.
+# Food E-commerce
+#### using Html , CSS , ReactJs , TailwindCss and Redux Toolkit
+
+## LiveDemo:
+

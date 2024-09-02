@@ -1,0 +1,148 @@
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header {
+  position: absolute;
+  padding: 15px;
+  min-height: 71px;
+  width: 100%;
+}
+header .container {
+  @apply between-flex;
+  gap: 20px;
+}
+header .container .logo {
+  position: relative;
+  z-index: 99;
+}
+header .container nav {
+  display: flex;
+  z-index: 50;
+}
+header .container nav ul {
+  @apply flex items-center gap-6;
+}
+header .container nav ul li a {
+  font-size: 23px;
+  color: #ffffff8c;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+  text-transform: uppercase;
+  @apply md:text-[18px];
+}
+
+header .container nav ul li a::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 0%;
+  background-color: white;
+  left: 0;
+  bottom: -1px;
+  transition: 0.2s all ease-in-out;
+}
+
+header .container nav ul li a:hover::after,
+header .container nav ul li a.active::after {
+  width: 100%;
+}
+
+header .container nav ul li a.active,
+header .container nav ul li a:hover {
+  color: white;
+}
+.container .nav-menu {
+  @apply flex flex-wrap gap-2 w-9 cursor-pointer;
+  height: 10px;
+  position: relative;
+  z-index: 99;
+}
+.container .nav-menu span {
+  @apply block w-full bg-white rounded-md;
+  height: 3px;
+  transition: 0.3s all ease-in-out;
+}
+.container .nav-menu.active span {
+  position: absolute;
+}
+.container .nav-menu.active span:first-of-type {
+  transform: rotate(45deg);
+}
+
+.container .nav-menu.active span:nth-of-type(2) {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 767px) {
+  header {
+    height: 100vh;
+  }
+  header .container nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+  header .container nav ul {
+    display: none;
+    transition: 0.3s all ease-in-out;
+    font-size: 20px;
+  }
+  header .container nav ul.active {
+    @apply center-flex;
+    flex-direction: column;
+  }
+
+  header .container nav ul::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #790a0af5;
+    z-index: -1;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+header .container .nav-icons {
+  @apply flex items-center gap-2 text-[22px];
+  z-index: 99;
+}
+header .container .nav-icons > div {
+  @apply center-flex rounded-full w-10 h-10 relative cursor-pointer;
+  border: 2px solid #fff;
+  transition: 0.3s all ease-in-out;
+}
+header .container .nav-icons > div:hover {
+  background-color: #d62828;
+}
+header .container .nav-icons div span {
+  @apply center-flex rounded-full w-[20px] h-[20px] absolute;
+  background: #d62828;
+  font-size: 13px;
+  top: -5px;
+  right: -5px;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  header nav.none {
+    display: none;
+  }
+  header ul.none {
+    display: none;
+  }
+}

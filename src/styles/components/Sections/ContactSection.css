@@ -1,0 +1,32 @@
+.contact-container {
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-container .inp input,
+.contact-container textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+.contact-container .inp input::placeholder {
+  color: rgba(255, 255, 255, 0.692);
+}
+.contact-container textarea {
+  resize: none;
+  height: 235px;
+}
+.contact-container .send {
+  background-color: transparent;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.contact-container .send:hover {
+  background-color: #fff;
+  color: black;
+}

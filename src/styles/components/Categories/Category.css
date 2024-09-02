@@ -1,0 +1,39 @@
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cat .cat-img {
+  transition: border 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.cat .cat-img::before {
+  content: "";
+  position: absolute;
+  height: 205px;
+  width: 205px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: border 0.2s ease-in-out;
+}
+.cat .cat-check{
+  @apply w-[40px] h-[40px] bg-main rounded-full center-flex absolute z-10 right-2 top-[-12px];
+  transition: 0.3s all ease-in-out;
+}
+.cat .cat-img.selected {
+  background-color: rgba(214, 40, 40, 0.1);
+}
+.cat .cat-img.selected::before {
+  border-color: #d62828;
+}
+
+.cat .title {
+  transition: color 0.2s ease-in-out;
+}
+
+.cat .cat-img.selected .title h4 {
+  color: #d62828;
+}

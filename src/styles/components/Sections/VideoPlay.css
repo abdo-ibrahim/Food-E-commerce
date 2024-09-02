@@ -1,0 +1,27 @@
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-play .video {
+  @apply center-flex;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.8) 10%
+    ),
+    url("../../../assets/imgs/crumb.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.video .play {
+  @apply center-flex w-[100px] h-[100px] rounded-full cursor-pointer;
+  border: 1px solid #fff;
+  transition: 0.2s;
+}
+.video .play:hover {
+  background-color: #ffffffd2;
+  border: none;
+  color: black;
+}
