@@ -22,7 +22,7 @@ const CardDetails = ({ product }) => {
       <div>
         <Toaster position="top-center" reverseOrder={false} />
       </div>
-      <div className="card-details mb-4 flex items-start gap-8 p-4 bg-gray">
+      <div className="card-details mb-4 flex items-start gap-8 p-4 bg-gray flex-col md:flex-row">
         {product?.isNew && <div className="new">New</div>}
         {!isfav ? (
           <div
@@ -49,7 +49,7 @@ const CardDetails = ({ product }) => {
             <FaHeart className="text-white text-[18px] fav_false" />
           </div>
         )}
-        <div className="item-img w-[40%] rounded-lg">
+        <div className="item-img md:w-[40%] rounded-lg">
           <img src={crumb} alt="" className="w-full h-full rounded-lg" />
         </div>
         <div className="item-info relative flex-col text-left flex-1 pr-4">

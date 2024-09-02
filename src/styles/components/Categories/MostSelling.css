@@ -11,6 +11,11 @@
   background: #474747;
   position: relative;
 }
+@media (max-width: 767px) {
+  .scroll-pagination {
+    width: 50%;
+  }
+}
 .scroll-pagination .swiper-scrollbar-drag {
   background-color: #d62828;
   border-radius: 5px;

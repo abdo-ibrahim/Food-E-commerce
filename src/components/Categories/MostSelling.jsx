@@ -17,7 +17,7 @@ const MostSelling = () => {
         <Swiper
           modules={[Navigation, Scrollbar]}
           spaceBetween={40}
-          slidesPerView={1.3}
+          slidesPerView={1.2}
           navigation={{ nextEl: ".right-arrow", prevEl: ".left-arrow" }}
           scrollbar={{
             el: ".scroll-pagination",
@@ -48,7 +48,7 @@ const MostSelling = () => {
               <FaArrowLeft className="text-[20px]" />
             </div>
             <div className="right-arrow center-flex">
-              <FaArrowRight className="text-[20px]" />
+              <FaArrowRight className="text-[16px]md:text-[20px]" />
             </div>
           </div>
         </div>

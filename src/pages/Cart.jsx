@@ -31,7 +31,7 @@ const Cart = () => {
                 ))}
               </div>
               {/* make checkout as a comp */}
-              <div className="checkout btn-item w-[350px] h-[220px]">
+              <div className="checkout btn-item w-[270px] h-[180px] md:w-[350px] md:h-[220px]">
                 <div className="total between-flex uppercase mb-10 p-4">
                   <h4 className="text-[22px]">Total: </h4>
                   <p className="text-[22px] text-main">{total} EG</p>

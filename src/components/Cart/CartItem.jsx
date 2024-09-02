@@ -13,15 +13,15 @@ const CartItem = ({ product }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="cart-item btn-item mb-4">
-      <div className="item-img h-[109px] w-[157px] rounded-lg">
+    <div className="cart-item btn-item mb-4 max-w-full">
+      <div className="item-img h-[80px] w-[80px] sm:h-[90px] sm:w-[90px] md:h-[109px] md:w-[157px] rounded-lg">
         <img
           src="./assets/imgs/crumb.jpg"
           alt=""
           className="w-full h-full rounded-lg"
         />
       </div>
-      <div className="item-info flex-col text-left flex-1 pr-4">
+      <div className="item-info flex-col text-left flex-1 pr-4 max-w-full">
         <div className=" between-flex ">
           <h4>Pork Chop with Apple Chutney</h4>
           <IoClose
